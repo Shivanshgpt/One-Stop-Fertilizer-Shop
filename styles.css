@@ -1,0 +1,247 @@
+
+/* font starts */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+
+.cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 30px;
+    height: 25px;
+    border: solid 1px #e9edf4;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    -webkit-animation: cube 12s ease-in forwards infinite;
+            animation: cube 12s ease-in forwards infinite;
+            transition-property: transparent 10%;
+        }
+.cube:nth-child(2n) {
+    border-color: #b0c7f5;
+}
+.cube:nth-child(2) {
+    -webkit-animation-delay: 2;
+            animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+}
+.cube:nth-child(3) {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    left: 75vw;
+    top: 50vh;
+}
+.cube:nth-child(4) {
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    left: 90vw;
+    top: 10vh;
+  }
+  .cube:nth-child(5) {
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+    left: 10vw;
+    top: 85vh;
+  }
+  .cube:nth-child(6) {
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+    left: 50vw;
+    top: 10vh;
+  }
+  
+  @-webkit-keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes cube {
+    from {
+      transform: scale(0) rotate(0deg) translate(-50%, -50%);
+      opacity: 1;
+    }
+    to {
+      transform: scale(20) rotate(960deg) translate(-50%, -50%);
+      opacity: 0;
+    }
+}
+ /* Font Ends */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px 0;
+}
+
+#home {
+    background-color: #f2f2f2;
+    text-align: center;
+    animation-name: rightmovement;
+}
+
+
+@keyframes rightmovement {
+    form{
+        top: 0;
+        left: 0;
+
+    }
+    to{
+        top: 0;
+        left: 1000%;
+
+    }
+}
+ /* 2nd font starts */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+body  {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+background-size:cover;
+        -webkit-animation: slidein 100s;
+        animation: slidein 100s;
+
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+
+}
+
+
+/* 2nd font ends */
+/* #about, #products, #services, #contact {
+    background-color: white;
+}
+     */
+     #product h2,ul{
+        color: aliceblue;
+     }
+     #header2{
+        color: aliceblue;
+     }
+#contact {
+    color: whitesmoke
+}
+.text{
+    font-family: 'Source Code Pro', monospace;
+    color: rgb(253, 238, 219);
+} 
+#about h2, #products h2, #services h2, #contact h2 {
+    text-align: center;
+}
+
+#products ul, #services ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#products ul li, #services ul li {
+    margin: 5px 0;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+
+
+form button {
+    
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: rgb(4, 69, 89);
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+.text{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+
+}
